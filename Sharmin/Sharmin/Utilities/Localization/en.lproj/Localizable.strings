@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+Sharmin
+
+  Created by Dima Sviderskyi on 15.11.2022.
+  
+*/
+
+"requestFailed" = "Request Failed";
+"invalidData" = "Invalid Data";
+"JSONDecodingFailure" = "JSON decoding Failure";
+"failed" = "Failed";
+"ok" = "OK";
+"usersListTitle" = "Users List";

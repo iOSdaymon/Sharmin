@@ -7,7 +7,12 @@
 
 import UIKit
 
-final class UsersListController: UIViewController {
+final class UsersListController: BaseViewController {
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        title = KeysForTranslate.usersListTitle.localized
+    }
     
 }
