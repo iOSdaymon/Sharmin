@@ -12,5 +12,13 @@ struct Constants {
     struct Text {
         static let empty = ""
         static let localizableFilename = "Localizable"
+        static let infoplistFilename = "Info"
+        static let plistExtension = "plist"
+        static let contentType = "Content-Type"
+        static let applicationJson = "application/json"
+    }
+    
+    struct TimeInterval {
+        static let request: Double = 30
     }
 }
