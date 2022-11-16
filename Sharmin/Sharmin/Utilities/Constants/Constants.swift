@@ -1,5 +1,5 @@
 //
-//  UsersListController.swift
+//  UsersListViewController.swift
 //  Sharmin
 //
 //  Created by Dima Sviderskyi on 15.11.2022.
@@ -20,5 +20,12 @@ struct Constants {
     
     struct TimeInterval {
         static let request: Double = 30
+    }
+    
+    struct Size {
+        static var appCornerRadius: CGFloat {
+            return UIDevice.current.userInterfaceIdiom == .pad ? 10 : 5
+        }
+        static var borderWidth = 1.0
     }
 }

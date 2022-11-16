@@ -8,8 +8,8 @@
 import Foundation
 
 public enum Api {
-    case users
-    case posts
+    case getUsers
+    case getPosts
 }
 
 extension Api: EndPointType {
@@ -26,27 +26,27 @@ extension Api: EndPointType {
     
     var path: String {
         switch self {
-        case .users:
+        case .getUsers:
             return "users"
-        case .posts:
+        case .getPosts:
             return "posts"
         }
     }
     
     var apiPath: String {
-        return apiVersion + path
+        return path
     }
     
     var httpMethod: HTTPMethod {
         switch self {
-        case .users, .posts:
+        case .getUsers, .getPosts:
             return .get
         }
     }
     
     var task: HTTPTask {
         switch self {
-        case .users, .posts:
+        case .getUsers, .getPosts:
             return .request
         }
     }
