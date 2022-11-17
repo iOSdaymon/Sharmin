@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		43AAFB5FACB3073C78B1614F /* Pods_Sharmin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD9F77B59E060F6C03F6034 /* Pods_Sharmin.framework */; };
+		D944BBA42926549100B11EFC /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D944BBA32926549100B11EFC /* UIView+Extension.swift */; };
 		D95E278C292418050055A627 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95E278B292418050055A627 /* AppDelegate.swift */; };
 		D95E2795292418060055A627 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D95E2794292418060055A627 /* Assets.xcassets */; };
 		D95E2798292418060055A627 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95E2796292418060055A627 /* LaunchScreen.storyboard */; };
@@ -60,6 +61,7 @@
 		6EEC331BE56C675B28086F0F /* Pods-Sharmin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sharmin.release.xcconfig"; path = "Target Support Files/Pods-Sharmin/Pods-Sharmin.release.xcconfig"; sourceTree = "<group>"; };
 		7FD9F77B59E060F6C03F6034 /* Pods_Sharmin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sharmin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7FD2FC76F3F316DF2DBDC71 /* Pods-Sharmin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sharmin.debug.xcconfig"; path = "Target Support Files/Pods-Sharmin/Pods-Sharmin.debug.xcconfig"; sourceTree = "<group>"; };
+		D944BBA32926549100B11EFC /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		D95E2788292418050055A627 /* Sharmin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sharmin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D95E278B292418050055A627 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D95E2794292418060055A627 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 		D95E27BA29242C380055A627 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				D944BBA32926549100B11EFC /* UIView+Extension.swift */,
 				D95E28912925A3450055A627 /* UIImageView+Extension.swift */,
 				D95E288929258E960055A627 /* UIViewController+Extension.swift */,
 				D95E28672924EDC50055A627 /* UINavigationController+Extension.swift */,
@@ -576,6 +579,7 @@
 				D95E27E429242C380055A627 /* String+Extension.swift in Sources */,
 				D95E28922925A3450055A627 /* UIImageView+Extension.swift in Sources */,
 				D95E27B7292428F20055A627 /* Localizable.swift in Sources */,
+				D944BBA42926549100B11EFC /* UIView+Extension.swift in Sources */,
 				D95E282D2924E63E0055A627 /* Api.swift in Sources */,
 				D95E28682924EDC50055A627 /* UINavigationController+Extension.swift in Sources */,
 				D95E288429251A9D0055A627 /* UsersListViewModel.swift in Sources */,

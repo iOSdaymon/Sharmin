@@ -36,12 +36,11 @@ class UsersListCell: UITableViewCell {
         postsCount.text = String(model.posts?.count ?? 0)
     }
     
-//    override func layoutSubviews() {
-//        super.layoutSubviews()
-//        
-//        thumbnailImageView.layer.cornerRadius = thumbnailImageView.bounds.height / 2
-//        thumbnailImageView.clipsToBounds = true
-//    }
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        thumbnailImageView.round()
+    }
 }
 
 // MARK: - Private functions
