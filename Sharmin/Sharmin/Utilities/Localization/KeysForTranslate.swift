@@ -16,4 +16,5 @@ enum KeysForTranslate: String, Localizable {
     case ok
     case usersListTitle
     case postsTitle
+    case userPostsTitle
 }

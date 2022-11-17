@@ -26,11 +26,28 @@ class UserPostsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        configureUI()
     }
 
+    override func loadView() {
+        super.loadView()
+        subscribe()
+    }
 }
 
+// MARK: - Private functions
+private extension UserPostsViewController {
+    
+    func configureUI() {
+        
+        title = KeysForTranslate.userPostsTitle.localized
+        
+    }
+    
+    func subscribe() {
+        
+    }
+}
 // MARK: - UserPostsViewModelOutput
 extension UserPostsViewController: UserPostsViewModelOutput {
     

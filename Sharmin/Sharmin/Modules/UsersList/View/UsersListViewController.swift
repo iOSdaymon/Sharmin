@@ -75,6 +75,16 @@ private extension UsersListViewController {
                 cell.update(with: user)
             }
             .disposed(by: disposeBag)
+        
+        tableView.rx.itemSelected
+            .subscribe(onNext: { [weak self] indexPath in
+                guard let self = self else { return }
+                self.tableView.deselectRow(at: indexPath, animated: true)
+                guard let cell = self.tableView.cellForRow(at: indexPath) as? UsersListCell,
+                let userId = cell.userId else { return }
+                self.viewModel.didSelectUser(with: userId)
+            })
+            .disposed(by: disposeBag)
     }
 }
 

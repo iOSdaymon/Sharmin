@@ -15,7 +15,7 @@ class UsersListCell: UITableViewCell {
     @IBOutlet private weak var postsTitle: UILabel!
     @IBOutlet private weak var postsCount: UILabel!
     
-    var user: User?
+    var userId: Int?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -30,7 +30,7 @@ class UsersListCell: UITableViewCell {
     }
     
     func update(with model: User) {
-        self.user = model
+        self.userId = model.userId
         thumbnailImageView.set(model.thumbnailUrl)
         nameTextField.text = model.name
         postsCount.text = String(model.posts?.count ?? 0)

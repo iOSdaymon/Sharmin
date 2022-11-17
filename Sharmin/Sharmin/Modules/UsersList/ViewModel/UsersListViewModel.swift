@@ -20,6 +20,8 @@ protocol UsersListViewModelProtocol: Downloading {
     var users: BehaviorRelay<[User]> { set get }
     
     init(router: UsersListRouterProtocol)
+    
+    func didSelectUser(with userId: Int)
 }
 
 final class UsersListViewModel: UsersListViewModelProtocol {
@@ -46,21 +48,6 @@ final class UsersListViewModel: UsersListViewModelProtocol {
 
 // MARK: - Private functions
 private extension UsersListViewModel {
-    
-}
-
-// MARK: - UsersListViewModelProtocol
-extension UsersListViewModel {
-    
-    func downloadData() {
-        getUsers()
-        getPosts()
-        taskGroup.notify(queue: .main) { [weak self] in
-            guard let self = self else {return}
-            self.loading.onNext(false)
-            self.mountUserPosts()
-        }
-    }
     
     func getUsers() {
         
@@ -106,6 +93,25 @@ extension UsersListViewModel {
             updateUsers[$0].posts = postsDict[updateUsers[$0].userId]
         }
         users.accept(updateUsers)
+    }
+}
+
+// MARK: - UsersListViewModelProtocol
+extension UsersListViewModel {
+    
+    func downloadData() {
+        getUsers()
+        getPosts()
+        taskGroup.notify(queue: .main) { [weak self] in
+            guard let self = self else {return}
+            self.loading.onNext(false)
+            self.mountUserPosts()
+        }
+    }
+    
+    func didSelectUser(with userId: Int) {
+        guard let selectedUser = users.value.first(where: { $0.userId == userId }) else { return }
+        router.openPosts(for: selectedUser)
     }
 }
 
