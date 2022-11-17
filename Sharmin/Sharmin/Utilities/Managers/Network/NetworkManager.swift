@@ -1,8 +1,8 @@
 //
 //  NetworkManager.swift
-//  mafia
+//  Sharmin
 //
-//  Created by Dima Sviderskyi on 13.07.2021.
+//  Created by Dima Sviderskyi on 15.11.2022.
 //
 
 import Foundation
