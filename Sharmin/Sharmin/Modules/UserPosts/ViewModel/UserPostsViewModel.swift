@@ -6,16 +6,13 @@
 //
 
 import Foundation
-
-protocol UserPostsViewModelOutput: AnyObject {
-    
-    
-}
+import RxCocoa
+import RxSwift
 
 protocol UserPostsViewModelProtocol: AnyObject {
     
-    var user: User { get }
-    var output: UserPostsViewModelOutput? {set get}
+    var posts: BehaviorRelay<[Post]> { set get }
+    var imageUrlString: BehaviorRelay<String> { set get }
     
     init(router: UserPostsRouterProtocol, user: User)
     
@@ -24,34 +21,21 @@ protocol UserPostsViewModelProtocol: AnyObject {
 final class UserPostsViewModel: UserPostsViewModelProtocol {
     
     private let router: UserPostsRouterProtocol
+    private let user: User
     
-    var user: User
-    weak var output: UserPostsViewModelOutput?
+    var posts: BehaviorRelay<[Post]>
+    var imageUrlString: BehaviorRelay<String>
     
     init(router: UserPostsRouterProtocol, user: User) {
         self.router = router
         self.user = user
+        self.posts = BehaviorRelay(value: user.posts ?? [])
+        self.imageUrlString = BehaviorRelay(value: user.url)
     }
     
 }
 
 // MARK: - Private functions
 private extension UserPostsViewModel {
-    
-}
-
-// MARK: - UserPostsViewModelProtocol
-extension UserPostsViewModel {
-    
-    
-}
-
-// MARK: - Network Requests
-extension UserPostsViewModel {
-    
-    func downloadData() {
-        
-        
-    }
     
 }

@@ -27,5 +27,7 @@ struct Constants {
             return UIDevice.current.userInterfaceIdiom == .pad ? 10 : 5
         }
         static var borderWidth = 1.0
+        static let deviceWidth: CGFloat = UIScreen.main.bounds.size.width
+        static let deviceHeight: CGFloat = UIScreen.main.bounds.size.height
     }
 }

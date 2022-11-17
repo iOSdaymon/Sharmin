@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		43AAFB5FACB3073C78B1614F /* Pods_Sharmin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD9F77B59E060F6C03F6034 /* Pods_Sharmin.framework */; };
 		D944BBA42926549100B11EFC /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D944BBA32926549100B11EFC /* UIView+Extension.swift */; };
+		D944BBA72926742900B11EFC /* PostsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D944BBA52926742900B11EFC /* PostsListCell.swift */; };
+		D944BBA829267FBD00B11EFC /* PostsListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D944BBA62926742900B11EFC /* PostsListCell.xib */; };
 		D95E278C292418050055A627 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95E278B292418050055A627 /* AppDelegate.swift */; };
 		D95E2795292418060055A627 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D95E2794292418060055A627 /* Assets.xcassets */; };
 		D95E2798292418060055A627 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95E2796292418060055A627 /* LaunchScreen.storyboard */; };
@@ -62,6 +64,8 @@
 		7FD9F77B59E060F6C03F6034 /* Pods_Sharmin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sharmin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7FD2FC76F3F316DF2DBDC71 /* Pods-Sharmin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sharmin.debug.xcconfig"; path = "Target Support Files/Pods-Sharmin/Pods-Sharmin.debug.xcconfig"; sourceTree = "<group>"; };
 		D944BBA32926549100B11EFC /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		D944BBA52926742900B11EFC /* PostsListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListCell.swift; sourceTree = "<group>"; };
+		D944BBA62926742900B11EFC /* PostsListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostsListCell.xib; sourceTree = "<group>"; };
 		D95E2788292418050055A627 /* Sharmin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sharmin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D95E278B292418050055A627 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D95E2794292418060055A627 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -402,6 +406,8 @@
 		D95E286D2925174D0055A627 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D944BBA52926742900B11EFC /* PostsListCell.swift */,
+				D944BBA62926742900B11EFC /* PostsListCell.xib */,
 				D95E287D292519820055A627 /* UserPostsViewController.swift */,
 				D95E287E292519820055A627 /* UserPostsViewController.xib */,
 			);
@@ -513,6 +519,7 @@
 				D95E2880292519820055A627 /* UserPostsViewController.xib in Resources */,
 				D95E288D2925919D0055A627 /* UsersListCell.xib in Resources */,
 				D95E27B5292428F20055A627 /* Localizable.strings in Resources */,
+				D944BBA829267FBD00B11EFC /* PostsListCell.xib in Resources */,
 				D95E2798292418060055A627 /* LaunchScreen.storyboard in Resources */,
 				D95E2795292418060055A627 /* Assets.xcassets in Resources */,
 			);
@@ -603,6 +610,7 @@
 				D95E282E2924E63E0055A627 /* NetworkRouter.swift in Sources */,
 				D95E28482924EB810055A627 /* ParameterEncoding.swift in Sources */,
 				D95E28642924ED250055A627 /* Transition.swift in Sources */,
+				D944BBA72926742900B11EFC /* PostsListCell.swift in Sources */,
 				D95E27F529242CA00055A627 /* Constants.swift in Sources */,
 				D95E28312924E63E0055A627 /* EndPointType.swift in Sources */,
 				D95E2870292517620055A627 /* Post.swift in Sources */,

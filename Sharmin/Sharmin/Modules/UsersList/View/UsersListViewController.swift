@@ -29,10 +29,15 @@ final class UsersListViewController: BaseViewController {
         fatalError("Required init error" + "\(Self.self)")
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        configureUI()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        configureUI()
         viewModel.downloadData()
     }
     
